@@ -1,15 +1,26 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const plainLight = localFont({
+  src: [
+    {
+      path: '../../public/fonts/plain-light.ttf',
+    }
+  ],
+  variable: '--font-plain-light',
+
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const silkSerif = localFont({
+  src: [
+    {
+      path: '../../public/fonts/silkserif-regularitalic.ttf',
+    }],
+  variable: '--font-silk-serif',
 });
+
+
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${plainLight.variable} ${silkSerif.variable} antialiased`}
       >
         {children}
       </body>
