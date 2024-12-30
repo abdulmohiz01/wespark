@@ -25,8 +25,20 @@
   }
 }
 
-/* Media query for small screens */
+
+
+
+
+
+
+
+
+/* --------------------------------Media Queries----------------------- */
 @media (max-width: 768px) {
+  .line h1 {
+    font-size: 8vw;
+  }
+
   @keyframes anime {
     0% {
       font-family: "Plain Light", sans-serif !important;
@@ -47,6 +59,19 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * {
   font-family: "Plain Light", Helvetica, sans-serif;
@@ -70,6 +95,9 @@
   font-size: 3vw;
   font-weight: 100;
 }
+.line:nth-child(1) {
+  gap: 1vw;
+}
 
 .line1-part1 h5 {
   width: 5vw;
@@ -85,7 +113,6 @@
 
 .line h2 {
   font-size: 6.2vw;
-  text-transform: uppercase;
-  /* transition: all ease; */
+  text-transform: uppercase; 
   animation: anime 0.6s infinite alternate;
 }
