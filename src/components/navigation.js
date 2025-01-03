@@ -72,7 +72,7 @@ const Navigation = () => {
             <div
                 id="nav"
                 className="w-[100%] h-[100vh] text-white bg-black fixed top-0 z-10 trasnlate-y-[-120%] flex "  >
-                <div className='w-[50%]  md:mt-[8vw] nav_links leading-[110px] ml-[4vw]'>
+                <div className='w-[50%]  md:mt-[8vw] nav_links text-[6.6vw] uppercase font-[600] leading-[110px] ml-[4vw]'>
                     <h2 data-text='Home'>Home</h2>
                     <h2 data-text='Works'>Works</h2>
                     <h2 data-text='About'>About</h2>
@@ -81,7 +81,7 @@ const Navigation = () => {
                 <div className='w-[40%] md:mt-[8vw] flex flex-col gap-[4vw] pl-[4vw]'>
                     <div >
                         <div>Socials</div>
-                        <div className='nav_info'>
+                        <div className='text-[1.46vw] pt-[20px]'>
                             <h2>Instagram</h2>
                             <h2>LinkedIn</h2>
                             <h2>Upwork</h2>
@@ -90,13 +90,13 @@ const Navigation = () => {
                     </div>
                     <div >
                         <div>Address</div>
-                        <div className='nav_info'>
+                        <div className='text-[1.46vw] pt-[20px]'>
                             <p>123 XYX, ABC</p>
                         </div>
                     </div>
                     <div>
                         <div>Say Hi!</div>
-                        <div className='nav_info'>
+                        <div className='text-[1.46vw] pt-[20px]'>
                             <Link className='underline' href={'mailto: #'}>
                                 info@xyz.com
                             </Link>
